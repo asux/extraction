@@ -3,14 +3,14 @@ require 'Qt'
 require 'qwt'
 require 'narray'
 
-$KCODE='u'
+$KCODE = 'u' if RUBY_VERSION < '1.9'
 
 module Extraction
   R_MAX = 100.0
 end
 
 require 'extraction/core_ext'
-require 'extraction/extraction_widget'
-require 'extraction/calculations'
 require 'extraction/mouse_spy'
+require 'extraction/calculations'
+require 'extraction/extraction_widget'
 

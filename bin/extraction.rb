@@ -7,6 +7,7 @@ require 'pry'
 
 if $0 == __FILE__
   app = Qt::Application.new(ARGV)
+  #Qt.debug_level = Qt::DebugLevel::High
   window = Extraction::ExtractionWidget.new
   rect = app.desktop.availableGeometry
   x = rect.width / 2 - window.width / 2

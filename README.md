@@ -2,6 +2,7 @@ Extraction
 ==========
 
 Requires:
-* QtRuby
-* Qwt
-* narray
+
+  * QtRuby
+  * Qwt bindings
+  * narray
